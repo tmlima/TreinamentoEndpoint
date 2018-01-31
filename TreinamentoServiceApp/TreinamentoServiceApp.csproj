@@ -65,16 +65,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HelloWorldService.svc" />
+    <Content Include="VendaService.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contract\Nfse.cs" />
+    <Compile Include="Contract\Venda.cs" />
     <Compile Include="HelloWorldService.svc.cs">
       <DependentUpon>HelloWorldService.svc</DependentUpon>
     </Compile>
     <Compile Include="IHelloWorldService.cs" />
+    <Compile Include="IVendaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VendaService.svc.cs">
+      <DependentUpon>VendaService.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
